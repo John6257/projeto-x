@@ -4,6 +4,8 @@
 
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 
+
+
 /* Variáveis */
 :root {
     /* Paleta de cores */
@@ -91,7 +93,7 @@ p {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -116,6 +118,62 @@ p {
 
     /* letter-spacing: 2px;
     word-spacing: 2px; */
+}
+
+.slider {
+    /* po */
+position: relative;
+  width: 300px;
+  
+  height: 200px;
+
+  /* overf */
+  overflow: hidden;
+
+}
+
+.slide {
+
+    position: absolute;
+    /* wi */
+    width: 100%;
+       /* heig */
+       height: 100%;
+        opacity: 0;
+
+transition: opacity 1s ease-in-out;
+}
+ 
+.slide1 {
+    
+          /* back */
+    
+    background-image: url('trabalha-tecnico.jpg');
+
+    animation: slideAnimation  4s infinite;
+
+}
+
+.slide2 {
+    /* backgro */
+    background-image: url('trabalha-tecnico 02.jpg');
+             /* anim */
+    animation: slideAnimation 4s infinite 2s;
+}
+
+.slide3 {
+    /* bac */
+    background-image: url('trabalha-tecnico 03.jpg');
+             
+    animation: slideAnimation 4s infinite 2s;
+
+}
+
+@keyframes slideAnimation {
+
+    0%, 33.33% {opacity: 1; }
+
+    33.34%, 100% {opacity: 0; }
 }
 
 .modalidades {
@@ -208,7 +266,16 @@ p {
     border-left: solid 1px var(--cor-06);
 }
 
+.imagem-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 
+}
 
-
+.imagem-contrainer img {
+  max-width: 70%;
+  height: auto;
+}
 
